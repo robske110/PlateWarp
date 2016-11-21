@@ -1,0 +1,7 @@
+debug: false
+lang: "eng"
+hold-still-overwrite: false
+#This will overwrite the setting of SimpleWarp and use the options below instead
+hold-still-enabled: true
+#This will require the player to stand still on the plate in order to be warped.
+hold-still-time: 40 #Ticks (20 ticks == 1 secound)

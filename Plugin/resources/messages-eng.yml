@@ -1,0 +1,26 @@
+#PlateWarp translation file.
+#Be aware that this file will be overwritten by a update.
+#Just copy this file, rename your copied file to messages-customized.yml,
+#make your edits there, and then change the lang setting in config.yml to customized.
+#Be sure to check this file after an update for possible new message strings.
+---
+cmd:
+  add:
+    desc: "Assigns a WarpPlate to the specified Warp."
+    usage: "/warn <PlayerName> <Reason> [Points]"
+    msgs: #TODO
+  remove:
+    desc: "Deletes the WarpPlate for the specified Warp."
+    usage: "/warninfo <PlayerName>"
+    msgs: #TODO
+  list:
+    desc: "Prints out a list of all WarpPlates"
+    usage: "/listwarps"
+    msgs: #TODO
+perm: #TODO: IMPLEMENT (how?)
+  PlateWarp.use: "Allows the use of all PlateWarps"
+  PlateWarp.command.add: "Allows to run the /platewarpadd command"
+class:
+  PlateWarp:
+    session.open-on-start: ""
+...

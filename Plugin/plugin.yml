@@ -1,0 +1,26 @@
+name: PlateWarp
+main: robske_110\PlateWarp\PlateWarp
+version: 1.0.0-InDev
+author: robske_110
+api: [2.0.0, 2.1.0]
+load: POSTWORLD
+denpend: ["SimpleWarp"]
+permissions:
+  platewarp:
+    default: op
+    children:
+      platewarp.use:
+        default: true
+        description: "Allows the use of all PlateWarps"
+        platewarp.command:
+          default: op
+          children:
+            platewarp.command.add:
+              default: op
+              decription: "Allows to use the /addwarpplate command"
+            platewarp.command.remove:
+              default: op
+              decription: "Allows to use the /delwarpplate command"
+            platewarp.command.list:
+              default: op
+              decription: "Allows to use the /listwarps command"
